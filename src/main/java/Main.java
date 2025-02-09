@@ -1,4 +1,5 @@
 import pl.edu.agh.hangman.Game;
+import pl.edu.agh.hangman.WordSelectorFromFile;
 
 import java.util.Scanner;
 
@@ -75,7 +76,7 @@ public class Main {
         boolean replayFlag = true;
         Scanner scanner = new Scanner(System.in);
         while(replayFlag) {
-            Game game1 = new Game("slowa.txt");
+            Game game1 = new Game(new WordSelectorFromFile("slowa.txt"));
             game1.play();
             while(true) {
                 System.out.println("Would you like to play again? (y/n)");

@@ -6,10 +6,11 @@ public class Game {
     private String mysteryWord = "";
     private Checker checker;
     private String filename = "slowa.txt";
+    private WordSelectorIn wordSelector;
 
-    public Game(String filename){
-        WordSelector wordSelector = new WordSelector();
-        this.mysteryWord = wordSelector.selectWord(filename);
+    public Game(WordSelectorIn wordSelector) {
+        this.wordSelector = wordSelector;
+        this.mysteryWord = wordSelector.getWord();
         this.checker = new Checker(this.mysteryWord);
     }
 

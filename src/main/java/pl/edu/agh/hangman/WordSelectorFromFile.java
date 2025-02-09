@@ -11,7 +11,7 @@ public class WordSelectorFromFile implements WordSelectorIn {
 
     public String filename;
 
-    public void WordSelectorFromFile(String filename) {
+    public WordSelectorFromFile(String filename) {
         this.filename = filename;
     }
 
