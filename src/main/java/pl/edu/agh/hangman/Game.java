@@ -19,18 +19,18 @@ public class Game {
         while (true){
             Display.show(this.checker.getNumberOfMistakes(), this.checker.getWordState());
             System.out.print("Guess a letter: ");
-            char letter = scanner.next().charAt(0);
+            char letter = Character.toUpperCase(scanner.next().charAt(0));
             this.checker.checkLetter(letter);
             if (this.checker.checkWin()){
                 System.out.println("You won!");
                 System.out.println(String.format("The mystery word is: %s", this.mysteryWord));
-                //TODO display image
+                Display.winImage();
                 break;
             } else if (this.checker.getNumberOfMistakes() == Display.HANGMANPICS.length-1) {
                 Display.show(Display.HANGMANPICS.length-1, checker.getWordState());
                 System.out.println("You lost!");
                 System.out.println(String.format("The mystery word is: %s", this.mysteryWord));
-                //TODO display image
+                Display.lossImage();
                 break;
             }
         }

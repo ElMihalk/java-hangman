@@ -3,6 +3,74 @@ import pl.edu.agh.hangman.Game;
 import java.util.Scanner;
 
 public class Main {
+
+    public static final String[] newPICS = new String[]{
+            "  +---+\n" +
+                    "       \n" +
+                    "       \n" +
+                    "       \n" +
+                    "       \n" +
+                    "       \n" +
+                    "=========",
+            "  +---+\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "  O   |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "  O   |\n" +
+                    "  |   |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "  O   |\n" +
+                    " /|   |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "  O   |\n" +
+                    " /|\\  |\n" +
+                    "      |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "  O   |\n" +
+                    " /|\\  |\n" +
+                    " /    |\n" +
+                    "      |\n" +
+                    "=========",
+            "  +---+\n" +
+                    "  |   |\n" +
+                    "  O   |\n" +
+                    " /|\\  |\n" +
+                    " / \\  |\n" +
+                    "      |\n" +
+                    "========"
+    };
+
+
     public static void main(String[] args) {
         boolean replayFlag = true;
         Scanner scanner = new Scanner(System.in);
