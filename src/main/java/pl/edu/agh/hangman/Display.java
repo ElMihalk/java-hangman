@@ -7,7 +7,8 @@ import static pl.edu.agh.hangman.Hangman.HANGMANPICS;
 
 public class Display {
 
-    public static final String[] HANGMANPICS = new String[]{
+
+    public static String[] HANGMANPICS = new String[]{
             "  +---+\n" +
                     "  |   |\n" +
                     "      |\n" +
@@ -58,6 +59,9 @@ public class Display {
                     "      |\n" +
                     "========"
     };
+    public void setHangmanPics(String[] newPics) {
+        this.HANGMANPICS = newPics;
+    }
 
 
     public static void show(int stage, String currentWord) {
@@ -70,6 +74,16 @@ public class Display {
         System.out.println("Current word: " + currentWord);
     }
 
+    public static void winImage(){
+        System.out.println("| (• ◡•)|");
+    }
+
+    public static void lossImage(){
+        System.out.println("ᕙ(⇀‸↼‶)ᕗ");
+    }
+
 
 }
+
+
 
