@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Checker {
     private final String wordToGuess;
-    private int gameState = 0;
+    private int numberOfMistakes = 0;
     HashSet<Character> lettersToGuess = new HashSet<>();
     HashSet<Character> lettersFound = new HashSet<>();
 
@@ -15,13 +15,13 @@ public class Checker {
         }
     }
 
-    public int getGameState() {
-        return this.gameState;
+    public int getNumberOfMistakes() {
+        return this.numberOfMistakes;
     }
 
     public void checkLetter(char letter) {
         if (!lettersToGuess.contains(letter)) {
-            this.gameState++;
+            this.numberOfMistakes++;
         } else {
             this.lettersFound.add(letter);
         }
