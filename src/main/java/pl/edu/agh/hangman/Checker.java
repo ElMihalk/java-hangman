@@ -13,6 +13,9 @@ public class Checker {
         for (char c : wordToGuess.toCharArray()) {
             this.lettersToGuess.add(c);
         }
+        if (this.wordToGuess.contains(" ")){
+            this.lettersFound.add(' ');
+        }
     }
 
     public int getNumberOfMistakes() {
