@@ -32,6 +32,7 @@ public class Game {
                 System.out.println(String.format("The mystery word is: %s", this.mysteryWord));
                 Display.lossImage();
                 break;
+                
             }
         }
     }
